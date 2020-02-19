@@ -1,0 +1,366 @@
+/*MAX-WIDTH: Toma toda la altura (espacio) que pueda disponer hasta los pixeles que se le asignen*/
+
+/*MARGIN: Es el margen de la página. Toma 4 valoresen orden(arriba, derecha, abajo e izquierda)*/
+
+/*POSITION(en background): Sirve para seleccionar desde donde queremos ver la imagen que asignamos*/
+
+/*BACKGROUND-SIZE: COVER; Sirve para forsar a tomar todo el espacio disponible de la imagen 
+    tanto en altura como en ancho pero siempre guardando las proporciones de la misma*/
+
+/*BACKGROUND-SIZE: COVER; Sirve para forsar a tomar todo el espacio disponible de la imagen 
+    tanto en altura como en ancho pero siempre guardando las proporciones de la misma*/
+
+/*HEIGHT: Sirve para que el encabezado sea mal alto
+    VH: Sirve para cubrir la altura de la pantalla  */
+
+/*MIN-HEIGHT: Sirve para establecer un mínimo de tamaño en el encabezado */
+
+/*FLEX-DIRECTION: Sirve para asignarle direcciones al contenido
+    COLUMN: Sirve para direccionarlo de arriba hacia abajo*/
+
+/*BOTTOM(en padding): parte inferior*/
+
+/*MAX-WIDTH: Sirve para establecer un maximo de tamaño en el elemento */
+
+/*LINE-HEIGHT: Sirve para definir el espacio entre el interlineado*/
+
+/*DISPLAY: FLEX: Sirve para posicionar al mismo nivel o renglon el contenido del div*/
+
+/*JUSTIFY-CONTENT: Sirve para justificar el contenido horizontalmente
+    SPACE-BETWEEN: Sirve para alinear el contenido a la izquierda y derecha respectivamente*/
+
+/*ALINGN-ITEMS: Sirve para alinear el contenido verticalmente
+    CENTER: Sirve para alinear exactamente a la altura todo el contenido*/
+
+/*PADDING: sirve para crear un espacio hacia adentro del elemento 
+    TOP: Parte superior*/
+
+/*TEXT-DECORATION: NONE: Sirve para eliminar la linea inferior del texto de los enlaces*/
+
+/*MARGIN-RIGHT: Sirve para definir la separacion entre el elemento de la derecha*/
+
+/*LAST-OF-TYPE: Es un pseudo selector que sirve para posicionarse en el ultimo elemento
+    PSEUDO SELECTORES: No es un selector como tal, pero sirve para seleccionar y añadir propiedades a elementos*/
+
+/*HOVER: Es un pseudo selector que sirve para cambiar el color de los elementos mientras te posicionas en el con el mouse*/
+
+/*FLEX-BASIS: Especifíca la base flexible, la cual es el tamaño inicial de un elemento flexible. 
+    CALC: Sirve para realizar operaciones matemáticas*/
+
+/*TEXT-ALING: Sirve para alinear texto
+    CENTER: se alinea en el centro*/
+
+/*TEXT-TRANSFORM: Sirve para cambiar un texto a mayusculas, minusculas, etc
+    UPPERCASE: Sirve para transformar todas las letras a MAYUSCULAS*/
+
+/*BORDER: Sirve para marcar el contorno de un elemento
+    SOLID: Es una simple linea
+    DOTTED: Es una línea punteada
+    DOUBLE: Es una línea doblew
+    COLOR: Especifica algún color correspondiente
+    WIDTH: Define el ancho */
+
+/*FONT-WEIGHT: Sirve para especificar el grosor de las letras del elemento*/
+/*FORM: Sirve para representar una seccion de un documento que tiene elementos
+ interactivos que permiten a un usuario enviar informacion a un servidor web  
+ CAMPOS: IMPUT*/
+
+html{
+    font-size: 62.5%;/*sirve para hacer la convercion de px a rem. 1rem = 10px*/
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 2;
+}
+
+/**Globales**/
+img{/*Video 40*/
+    max-width: 100%;
+}
+
+.contenedor{/*Video 32*/
+    
+    max-width: 120rem;
+    
+    margin: 0 auto 0 auto;
+    
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 3.4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2.6rem;
+}
+
+
+
+/**Utilidades**/ /*Sirven para estar reutilizando clases y para ahorrar código*/
+.seccion{/*Video 38*/
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300{/*Video 39*/
+    font-weight: 300;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+
+
+/**Botones**/
+.boton{/*Video 42*/
+    color: white;
+    font-weight: 250;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+}
+
+.boton-naranja{
+    background-color: rgb(248, 102, 48);
+}
+
+
+
+
+/**Encabezado**/
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio{/*Video 31*/
+    background-image: url(../Fotos-Coto12/Encabezado.JPG);
+    
+    background-position: center, center;
+    
+    background-size: cover;
+   
+    height: 100vh;
+    
+    min-height: 60rem;
+}
+
+.contenido-header{/*Video 37*/
+    height: 100%;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.contenido-header-logo-h1{/*Video 37*/
+    display: flex;
+    color: rgba(0, 0, 0, 0.507);
+
+    justify-content: space-between;
+
+    padding-bottom: 2rem;
+    
+    max-width: 100;
+    
+    line-height: 2rem;
+}
+
+
+
+
+.barra{/*Video 33*/
+    display: flex;
+   
+    justify-content: center;
+    
+    align-items: center;
+    
+    padding-top: 1rem ;
+}
+.barra-internas{
+    justify-content: space-between;
+}
+
+
+
+
+/**Navegacion**/
+.navegacion.inicio a{/*Video 33*/
+    color: green;   
+    background-color: white; 
+    padding: 0 0;
+
+    text-decoration: none;
+    
+    margin-right: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.5rem;
+}
+
+.navegacion a{/*Video 33*/
+    color: green;   
+   
+    padding: 0 0;
+
+    text-decoration: none;
+    
+    margin-right: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+
+.navegacion a:last-of-type{/*Video 33*/
+    margin: 0;
+}
+
+
+.navegacion a:hover{/*Video 33*/
+        color: black;
+}
+
+
+
+/**Iconos Nosotros**/
+.iconos-nosotros{/*Video 38*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono{
+    
+    flex-basis: calc( 33.3% - 1rem);
+    
+    text-align: center;
+}
+
+.icono h3{/*Video 39*/
+    
+    text-transform: uppercase;
+}
+
+
+/**Anuncios**/
+.contenedor-anuncio{/*Video 40*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.anuncio{/*Video 41*/
+    flex-basis: calc(33.3% - 1rem);
+    
+    border: .1rem solid gray;
+    background-color: rgba(128, 128, 128, 0.2);
+
+}
+
+.contenido-anucio{
+    padding: 2rem;
+}
+
+.contenido-anucio p{
+    font-size: 1.5rem;
+}
+
+
+
+/**Contacto**//*Video 45*/
+.imagen-contacto{
+    background-image: url(../Fotos-Coto12/contacto.JPG);
+    background-position:center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto{
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1;
+    color: white;
+}
+.contenido-contacto p{
+    font-size: 1.8rem;
+}
+
+
+
+/**Testimoniales**//*Video 49*/
+.testimonial{
+    background-color: teal;
+    font-size: 3.4rem;
+    max-width: 50rem;
+    padding: 2rem;
+    color: whitesmoke;
+    border-radius: 8rem;
+    
+}
+.testimonial p{
+    text-align: right;
+}
+
+blockquote{
+    font-style: italic ;
+}
+
+
+
+/**Footer**/
+.site-footer{
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright{
+ 
+    margin: 0;
+    color: white;
+}
+
+/*******************INTERNAS**//*Video 52*/
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2rem;
+}
+
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding:1rem  0 3rem 0;
+}
+
+.texto-nosotros p{
+    font-size: 2rem;
+}
+
+/*UBICACION*/
+.mapa iframe{
+    align-items: center;
+}
+
+/*CONTACTO*//*Video 58*/
+label{
+    display: block;
+}
+

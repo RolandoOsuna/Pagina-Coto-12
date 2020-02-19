@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="CSS/normalize.css"><!--NORMALIZE: Sirve para bien los elementos a la pagina y para que todos los éstos por defauld se van a ver en la misma manera en cualquier sistema operativo-->
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+    <header class="site-header">
+
+        <div class="contenedor contenido-header">
+            <div class="barra barra-internas">
+                <a href="index.html">
+                    <img src="IMG/logo.png" alt="Logo">
+                </a>
+                <nav class="navegacion">
+                    <a href="contacto.html">Contacto</a>
+                    <a href="precios.html">Precios</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="ubicacion.html">Ubicacion</a>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="fw-300 centrar-texto">¡Contáctanos!</h1>
+    <main class="contenedor seccion contenido-centrado">
+        <form action="">
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Tu Correo electrónico" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="opciones">Propietario o Inquilino</label>
+                <select id="opciones">
+                    <option value="" disabled selected>--Seleccione--</option>
+                    <option value="Propietario">Propietario</option>
+                    <option value="Inquilino">Inquilino</option>
+                </select>
+
+                <label for="cantidad">Cantidad</label>
+                <input type="number" min="0" max="10">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+
+                <p>Como desea ser contactado:</p>
+                <label for="telefono">Teléfono</label>
+                <input type="radio" name="contacto" value="telefono" id="telefono">
+
+                <label for="correo">E-mail</label>
+                <input type="radio" name="contacto" value="correo" id="correo">
+
+                <p>Si eligió teléfono, elija la fecha y hora para la llamada</p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="09:00" max="18:00">
+            </fieldset>
+
+            <input type="submit">
+        </form>
+
+      
+    </main>
+
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion-footer">
+                <a href="">Informacion</a>
+                <a href="">Precios</a>
+                <a href="">Contacto</a>
+                <p>Todos los Derechos Recervados &copy;</p>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html> 
